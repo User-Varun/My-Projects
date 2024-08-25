@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home page html</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .display-none {
+        display: none;
+      }
+
+      html,
+      body {
+        font-size: 62%; /* 1rem = 10px*/
+        font-family: system-ui;
+      }
+
+      .home-page-container {
+        padding: 1.5rem;
+      }
+
+      .home-page-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem;
+      }
+
+      .home-page-navbar-heading {
+        font-size: 3.6rem;
+        font-weight: bold;
+      }
+
+      .home-page-navbar-write-new-msg-link img {
+        margin-top: 0.7rem;
+      }
+
+      .below-common-sticky-footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1.5rem;
+        background-color: #f1f1f1;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+      }
+
+      .home-page-searchbar-container {
+        display: flex;
+        align-items: center;
+        border: 0.1rem solid #dfdfdf;
+        border-radius: 1rem;
+        padding: 0.3rem;
+      }
+      .home-page-searchbar-container input {
+        padding: 1.5rem;
+        width: 90%;
+        border: none;
+        font-size: 1.8rem;
+      }
+      .home-page-searchbar-container input:focus {
+        outline: none;
+      }
+
+      .user-contact-container {
+        margin-top: 2rem;
+        padding: 0.6rem;
+      }
+
+      .user-contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #dfdfdf;
+        padding: 1rem 0rem;
+      }
+
+      .user-contact-img-element {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 5rem;
+      }
+
+      .user-contact-img-and-name-elements-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .user-contact-name {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      .user-contact-last-message {
+        font-size: 1.5rem;
+      }
+      .user-contact-last-message-time {
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+
+      .new-message-alert {
+        padding: 0.1rem 1.5rem;
+        background-color: #ffae1a;
+        font-size: 1.2rem;
+        font-weight: bold;
+        position: absolute;
+        bottom: 2.2rem;
+        right: 0;
+        color: white;
+        border-radius: 0.4rem;
+      }
+
+      .relative {
+        position: relative;
+      }
+
+      .user-contact-list-end-message {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+      }
+
+      .footer-icons img {
+        font-size: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="home-page-navbar">
+      <h2 class="home-page-navbar-heading">Messages</h2>
+      <a href="#" class="home-page-navbar-write-new-msg-link"
+        ><img src="../icons/create.png" alt="create new message btn"
+      /></a>
+    </nav>
+    <main class="home-page-container">
+      <div class="home-page-searchbar-container">
+        <input
+          type="text"
+          class="home-page-search-element"
+          placeholder="Search"
+        />
+        <a href="#"><img src="../icons/search.png" alt="search icon btn" /></a>
+      </div>
+
+      <div class="user-contact-container">
+        <!-- <div class="user-contact">
+          <div class="user-contact-img-and-name-elements-container">
+            <img
+              src="../imgs/photo.jpg"
+              alt=" user's contact"
+              class="user-contact-img-element"
+            />
+
+            <span>
+              <span class="user-contact-name">Anna</span> <br />
+              <span class="user-contact-last-message">Yay!</span>
+            </span>
+          </div>
+
+          <span class="relative">
+            <p class="new-message-alert">NEW</p>
+
+            <span class="user-contact-last-message-time">09:31</span>
+          </span>
+        </div> -->
+        <p class="user-contact-list-end-message">End of contacts list 🙂</p>
+      </div>
+    </main>
+    <footer class="below-common-sticky-footer">
+      <a href="/html/home-page.html" class="footer-icons"
+        ><img src="../icons/chat-icon.png" alt="chat icon"
+      /></a>
+      <a href="/html/settings-page.html" class="footer-icons"
+        ><img src="../icons/settings-icon.png" alt="settings icon"
+      /></a>
+    </footer>
+    <script src="../js/homePage.js"></script>
+  </body>
+</html>

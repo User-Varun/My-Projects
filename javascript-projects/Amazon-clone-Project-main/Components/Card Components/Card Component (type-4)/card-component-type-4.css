@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Amazon Ember", Arial, sans-serif;
+}
+
+@font-face {
+  font-family: "myFont";
+  src: url ("../fonts/amazon-font/Amazon Ember.ttf");
+}
+
+:root {
+  --navbar-color: #131921;
+  --small-font-size: 12px;
+  --a-little-big-font-size: 14px;
+  --color-white: #fff;
+}
+
+body {
+  background-color: #e3e6e6;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 10px;
+}
+
+.card {
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 15px;
+  background-color: white;
+}
+
+.card-heading span {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.card-picture img {
+  width: 100%;
+  height: 296px;
+  object-fit: cover;
+}
+
+.card-link a {
+  text-decoration: none;
+  color: #007185;
+  font-size: 13px;
+}

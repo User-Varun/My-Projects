@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile setting page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        font-size: 62%; /* 1rem = 10px*/
+        font-family: system-ui;
+      }
+
+      .profile-settings-page-container {
+        padding: 1.5rem;
+      }
+      .profile-settings-page-img-element {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 5rem;
+      }
+
+      .profile-settings-page-profile-link-element {
+        font-size: 2rem;
+        text-decoration: none;
+        color: #444;
+        font-weight: bold;
+      }
+      .profile-settings-page-cancel-link-element {
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: #444;
+        font-weight: 400;
+      }
+
+      .profile-settings-page-nav-element {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .profile-settings-page-img-and-link-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        position: relative;
+      }
+
+      .profile-settings-page-img-and-link-container-link-element {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: black;
+        font-weight: bold;
+        position: relative;
+      }
+      .profile-settings-page-img-and-link-container-hidden-input-element {
+        position: absolute;
+        opacity: 0;
+        top: 6.9rem;
+      }
+
+      /* Form element  */
+      .profile-settings-page-form-element {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .profile-settings-page-details-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .profile-settings-page-details-container label {
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+
+      .profile-settings-page-details-container input {
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: none;
+        border: 0.1rem solid #e9e5e5;
+        width: 100%;
+      }
+
+      .profile-settings-page-form-btn {
+        width: 100%;
+        background-color: #444;
+        padding: 1.5rem;
+        color: white;
+        border-radius: 1rem;
+        border: none;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-settings-page-container">
+      <nav class="profile-settings-page-nav-element">
+        >
+        <a
+          href="../index.html"
+          class="profile-settings-page-cancel-link-element"
+          >Cancel</a
+        >
+      </nav>
+         <form  class="sign-up-form" >
+   
+      <div class="profile-settings-page-img-and-link-container">
+        <img
+          src="profile-picture.png"
+          alt="profile picture"
+          class="profile-settings-page-img-element"
+          id="photoPreview"
+        />
+        <a
+          href="#"
+          class="profile-settings-page-img-and-link-container-link-element"
+          id="upload-link"
+          >Add profile picture</a
+        >
+        <input
+          type="file"
+          id="fileInput"
+          accept="image/*"
+          onchange="displayImage(event)"
+          class="profile-settings-page-img-and-link-container-hidden-input-element"
+          required
+
+        />
+      </div>
+      <div class="profile-settings-page-form-element">
+        <div class="profile-settings-page-details-container">
+          <label for="firstName">First name </label>
+          <input type="text" name="firstName" placeholder="jhon" required  />
+        </div>
+        <div class="profile-settings-page-details-container">
+          <label for="lastName">Last name </label>
+          <input type="text" name="lastName" placeholder="doe" required  />
+        </div>
+        <!-- <div class="profile-settings-page-details-container">
+          <label for="dateOfBirth">Date of birth</label>
+          <input type="date" name="dateOfBirth" required value="2005-01-23" />
+        </div> -->
+        <div class="profile-settings-page-details-container">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="jhonDoe@example.com"
+            required
+          />
+        </div>
+        <div class="profile-settings-page-details-container">
+          <label for="password">Create new password</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="mani123... perhaps!."
+            required
+          
+          />
+        </div>
+
+        <button class="profile-settings-page-form-btn">Create Account</button>
+      </>
+    </div>
+      </form>
+    <script src="sign-up.js"></script>
+  </body>
+</html>

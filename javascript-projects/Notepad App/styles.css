@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  padding: 2rem;
+  background-color: #f3f3f3;
+  color: #444;
+}
+
+.navbar {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+.navbar-search-form {
+  width: 100%;
+}
+
+.navbar-search {
+  width: 100%;
+  border-radius: 5rem;
+  padding: 1.2rem 2rem;
+  border: none;
+  background-color: #dbd8d8;
+}
+
+/* .divs {
+  width: 50vw;
+  background-color: white;
+  margin: 10px;
+} */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.create-note-input {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+}
+
+.notes {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rebeccapurple;
+  color: white;
+  font-size: medium;
+}
+
+.display-none {
+  display: none;
+}
+
+.notes-container {
+  background-color: #444;
+  height: 80vh;
+}
+
+.form-input {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}

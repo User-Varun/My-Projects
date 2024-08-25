@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimal to HexaDecimal converter </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+           
+        }
+
+        html , body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f7c25a;
+            font-size: 62.5%;
+        }
+
+        .main{ 
+         background-color: #ffffff;
+        padding: 0 5rem 5rem 5rem;
+         border-radius: 0.7rem;
+        }
+        .form{
+            display: flex;
+            gap: 3rem;
+        }
+
+        .btn{
+          border: none;
+          background-color: #ffa532;
+          padding: 0.3rem;
+          border-radius: 50%;
+        }
+
+        .form-input-decimal{
+          border-radius: 0.7rem;
+          font-size: 2.4rem;
+          padding-left: 0.8rem;
+        }
+
+
+
+        .answer{
+            background-color: #d8d8d8;
+        display: inline-flex;
+     
+    font-size: 2.2rem;
+    padding: 1.2rem 2rem;
+    margin-top: 3rem;
+    border-radius: 0.4rem;
+        }
+
+     .main p{
+            color: #8a8989;
+
+     }
+
+     .result{
+            padding-left: 1rem;
+    font-size: 2.2rem;
+     }
+
+      .label{
+            font-size: 2.8rem;
+    padding: 3.5rem 0rem;
+    display: flex;
+      }
+
+      
+    
+    </style>
+</head>
+<body>
+    <main class="main" >
+        <label class="label" >Decimal to hex Converter ✌</label>
+        <form class="form" >
+           
+            <input type='number' class="form-input-decimal" name="decimal-input" placeholder="Decimal Number here!" >
+            <button class="btn"><img src="rightArr.png" alt="submit"></button>
+        </form>
+        
+        <div class="answer" >
+        <p>In Hex it's &rightarrow;</p> 
+        </span> 
+        <span class="result" >...</span>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

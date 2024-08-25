@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        font-size: 62%; /* 1rem = 10px*/
+        font-family: system-ui;
+      }
+
+      .profile-settings-page-container {
+        padding: 1.5rem;
+      }
+      .profile-settings-page-img-element {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 5rem;
+      }
+
+      .profile-settings-page-profile-link-element {
+        font-size: 2rem;
+        text-decoration: none;
+        color: #444;
+        font-weight: bold;
+      }
+      .profile-settings-page-cancel-link-element {
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: #444;
+        font-weight: 400;
+      }
+
+      .profile-settings-page-nav-element {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .profile-settings-page-img-and-link-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+      }
+
+      .profile-settings-page-img-and-link-container-link-element {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: black;
+        font-weight: bold;
+      }
+
+      /* Form element  */
+      .profile-settings-page-form-element {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .profile-settings-page-details-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .profile-settings-page-details-container label {
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+
+      .profile-settings-page-details-container input {
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: none;
+        border: 0.1rem solid #e9e5e5;
+        width: 100%;
+      }
+
+      .profile-settings-page-form-btn {
+        width: 100%;
+        background-color: #444;
+        padding: 1.5rem;
+        color: white;
+        border-radius: 1rem;
+        border: none;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-settings-page-container">
+      <nav class="profile-settings-page-nav-element">
+        >
+        <a
+          href="/public/html/get-started.html"
+          class="profile-settings-page-cancel-link-element"
+          >Cancel</a
+        >
+      </nav>
+      <div class="profile-settings-page-img-and-link-container">
+        <img
+          src="../imgs/photo.jpg"
+          alt="profile picture"
+          class="profile-settings-page-img-element"
+        />
+        <a
+          href="#"
+          class="profile-settings-page-img-and-link-container-link-element"
+          >Add profile picture</a
+        >
+      </div>
+
+      <form class="profile-settings-page-form-element">
+        <div class="profile-settings-page-details-container">
+          <label for="first-name">First name </label>
+          <input type="text" name="first-name" placeholder="jhon" required />
+        </div>
+        <div class="profile-settings-page-details-container">
+          <label for="last-name">Last name </label>
+          <input type="text" name="last-name" placeholder="doe" required />
+        </div>
+        <div class="profile-settings-page-details-container">
+          <label for="date of birth">Date of birth</label>
+          <input type="date" name="date of birth" required />
+        </div>
+        <div class="profile-settings-page-details-container">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="jhonDoe@example.com"
+            required
+          />
+        </div>
+
+        <button class="profile-settings-page-form-btn">Create Account</button>
+      </form>
+    </div>
+  </body>
+  <script src="../js/signupForm.js"></script>
+</html>

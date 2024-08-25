@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action>
+      <label for="train-ticket">Select train ticket</label>
+      <select name="train-ticket" id="select1">
+        <option value="100">train A (100$)</option>
+        <option value="200">train b (200$)</option>
+        <option value="300">train c (300$)</option>
+      </select>
+      <div>
+        <label for="age">Enter your age </label>
+        <input type="text" name="age" id="age" />
+      </div>
+
+      <button class="submit">check ticket price</button>
+      <div>
+        <span
+          >The price of train ticket for you is:
+          <span class="final-price"></span
+        ></span>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

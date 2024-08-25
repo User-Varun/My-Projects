@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile setting page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        font-size: 62%; /* 1rem = 10px*/
+        font-family: system-ui;
+      }
+
+      .profile-settings-page-container {
+        padding: 1.5rem;
+      }
+      .profile-settings-page-img-element {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 5rem;
+      }
+
+      .profile-settings-page-profile-link-element {
+        font-size: 2rem;
+        text-decoration: none;
+        color: #444;
+        font-weight: bold;
+      }
+      .profile-settings-page-cancel-link-element {
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: #444;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+      }
+      .profile-settings-page-cancel-link-element a {
+        color: #444;
+        margin-left: 0.8rem;
+      }
+
+      .profile-settings-page-nav-element {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .profile-settings-page-img-and-link-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+      }
+
+      .profile-settings-page-img-and-link-container-link-element {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: black;
+        font-weight: bold;
+      }
+
+      /* Form element  */
+      .profile-settings-page-form-element {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .profile-settings-page-details-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .profile-settings-page-details-container label {
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+
+      .profile-settings-page-details-container input {
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: none;
+        border: 0.1rem solid #e9e5e5;
+        width: 100%;
+      }
+
+      .profile-settings-page-form-btn {
+        width: 100%;
+        background-color: #444;
+        padding: 1.5rem;
+        color: white;
+        border-radius: 1rem;
+        border: none;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-settings-page-container">
+      <nav class="profile-settings-page-nav-element">></nav>
+      <div class="profile-settings-page-img-and-link-container">
+        <img
+          src="../imgs/photo.jpg"
+          alt="profile picture"
+          class="profile-settings-page-img-element"
+        />
+        <a
+          href="#"
+          class="profile-settings-page-img-and-link-container-link-element"
+          >Add profile picture</a
+        >
+      </div>
+
+      <form
+        class="profile-settings-page-form-element"
+        action="/register"
+        method="post"
+      >
+        <div class="profile-settings-page-details-container">
+          <label for="firstName">firstName</label>
+          <input type="text" name="firstName" placeholder="jhon" required />
+        </div>
+        <div class="profile-settings-page-details-container">
+          <label for="username">username</label>
+          <input type="text" name="username" placeholder="jhon-doe" required />
+        </div>
+        <div class="profile-settings-page-details-container">
+          <label for="password">password</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="jhon-neom..."
+            required
+          />
+        </div>
+
+        <button class="profile-settings-page-form-btn" type="submit">
+          Create Account
+        </button>
+      </form>
+      <!-- <a href="/" class="profile-settings-page-cancel-link-element">Cancel</a> -->
+      <p class="profile-settings-page-cancel-link-element">
+        Already have an account?
+        <a href="/login">login here!</a>
+      </p>
+    </div>
+  </body>
+</html>

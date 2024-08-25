@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notepad App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <form class="navbar-search-form">
+        <input
+          type="text"
+          placeholder="Search your notes"
+          class="navbar-search"
+        />
+      </form>
+      <button class="create-note-btn">Create New Note</button>
+    </nav>
+
+    <main class="main-container">
+      <form class="form-input display-none">
+        <input
+          type="text"
+          placeholder="Create your notes..."
+          class="create-note-input"
+        />
+      </form>
+      <div class="notes-container"></div>
+
+      <!-- <textarea id="note" placeholder="Write your note here..."></textarea>
+        <br />
+        <button onclick="saveNote()">Save Note</button>
+        <button onclick="clearNote()">Clear Note</button> -->
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
